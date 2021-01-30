@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -12,17 +14,10 @@ section {
   width: 100%;
   top: 0;
   padding: 5px 60px;
+  z-index:9;
 }
 .topbar .cta {
   margin: 15px 0 0;
-}
-#hero {
-  background: url(../img/woodward-plumbing-and-heating-photo.png) no-repeat center center;
-  background-size: cover;
-  margin: 120px 0;
-  position: relative;
-  width: 100%;
-  min-height: 800px;
 }
 .logo {
   width: 138px;
@@ -34,30 +29,53 @@ nav {
   margin: 40px 0 0 100px;
   float: left;
 }
-nav a  {
+nav a {
   color: #463939;
   font-size: 15px;
   display: inline-block;
   margin: 0 20px 0 0;
 }
-nav ul li{
+nav ul li {
   display: inline-block;
 }
+#hero {
+  background: url('../img/woodward-plumbing-and-heating-photo.png') no-repeat center center;
+  background-size: cover;
+  margin: 120px 0;
+  position: relative;
+  width: 100%;
+  min-height: 800px;
+}
 .hero-content {
-  background: #000;
+  margin: 50px 0;
+  background: rgba(0, 0, 0, 0.9);
   height: 500px;
   width: 700px;
   right: 0;
-  /* float: right; */
+  position: absolute;
+  padding: 40px;
+  font-family: 'Roboto';
+}
+.hero-content h2 {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  max-width: 500px;
+  margin: 0 0 50px;
 }
 .smallHeadline {
-  
+  color:rgb(245, 207, 0);
+  font-size: 20px;
+  margin-top: 50px;
 }
 .selected {
   border-bottom: 2px solid #000;
 }
 .selected li {
   padding: 0 0 2px 0;
+}
+.cta button:hover {
+  cursor: pointer;
 }
 .cta button {
   background-color: #f5cf00;
@@ -72,7 +90,8 @@ nav ul li{
   color: #f5cf00;
 }
 .top-cta {
-  float: right;
+  position: absolute;
+  right: 200px;
 }
 
 

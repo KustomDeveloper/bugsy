@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <!-- <meta http-equiv="refresh" content="3; url="<?php //echo $_SERVER['PHP_SELF']; ?>"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Woodward Plumbing and Heating</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha512-Dop/vW3iOtayerlYAqCgkVr2aTr2ErwwTYOvRFUpzl2VhCMJyjQF0Q9TjUXIo6JhuM/3i0vVEt2e/7QQmnHQqw==" crossorigin="anonymous" />
+   <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 <body>
@@ -25,7 +25,7 @@
 
   <section id="hero">
     <div class="hero-content">
-      <h1 class="small">Residential Plumbing & Heating Services</h1>
+      <h1 class="smallHeadline">Residential Plumbing & Heating Services</h1>
       <h2>Get it Done Right the First Time</h2>
       <a class="cta" href="#"><button>CALL NOW</button></a>
     </div>
@@ -38,21 +38,23 @@
   </section>
 
   <section class="container">
-    <h2>Getting Your Project Taken Care of is Easy...</h2>
-    <div class="col-md-4">
-      <i class="fa fa-phone"></i>
-      <h3>Call Bill</h3>
-      <p>Chat with Bill about your project and what you are looking to have done.</p>
-    </div>
-    <div class="col-md-4">
-      <i class="fa fa-calendar"></i>
-      <h3>Schedule a Visit</h3>
-      <p>Set up a time for Bill to come to your property to assess your project, give you a quote and plan a project date.</p>
-    </div>
-    <div class="col-md-4">
-      <i class="fa fa-home"></i>
-      <h3>Rest Assured</h3>
-      <p>Have peace of mind that your project is going to be handled by a pro!</p>
+    <div class="row">
+      <h2>Getting Your Project Taken Care of is Easy...</h2>
+      <div class="col-md-4">
+        <i class="fa fa-phone"></i>
+        <h3>Call Bill</h3>
+        <p>Chat with Bill about your project and what you are looking to have done.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-calendar"></i>
+        <h3>Schedule a Visit</h3>
+        <p>Set up a time for Bill to come to your property to assess your project, give you a quote and plan a project date.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-home"></i>
+        <h3>Rest Assured</h3>
+        <p>Have peace of mind that your project is going to be handled by a pro!</p>
+      </div>
     </div>
 
     <a class="cta" href="tel:6072156508"><button>CALL NOW</button></a>
