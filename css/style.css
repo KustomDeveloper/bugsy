@@ -5,6 +5,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
+h1, h2, h3, h4 {
+  font-weight: 700;
+  font-family: Montserrat;
+}
 section {
   background: #fff;
 }
@@ -25,6 +29,9 @@ section {
   margin: 8px 0 8px 40px;
   float: left;
 }
+.mobile-menu {
+  display:none;
+}
 nav {
   margin: 40px 0 0 100px;
   float: left;
@@ -39,9 +46,9 @@ nav ul li {
   display: inline-block;
 }
 #hero {
-  background: url('../img/woodward-plumbing-and-heating-photo.png') no-repeat center center;
+  background: url('../img/woodward-plumbing-and-heating-photo.png') no-repeat center center fixed;
   background-size: cover;
-  margin: 120px 0;
+  margin: 120px 0 0;
   position: relative;
   width: 100%;
   min-height: 800px;
@@ -85,6 +92,10 @@ nav ul li {
   height: 54px;
   font-weight: bold;
 }
+.clear-cta button {
+  border: 1px solid #fff;
+  background: transparent;
+}
 .cta button:hover {
   background-color: transparent;
   color: #f5cf00;
@@ -92,6 +103,167 @@ nav ul li {
 .top-cta {
   position: absolute;
   right: 200px;
+}
+
+/*Section 1*/
+.section1 {
+  background: #fff url('../img/tools.png') no-repeat 100px 0;
+  padding: 100px 0;
+  background-size:100%;
+}
+.section1 h2 {
+  font-size: 40px;
+  max-width: 450px;
+}
+.section1 p{
+  max-width: 450px;
+  margin: 40px 0;
+  font-size:18px;
+}
+
+/*Section 2*/
+.phone-icon, .calendar-icon, .house-icon {
+  max-width:50px;
+  margin: 0 auto;
+  display:block;
+  color: #fff;
+}
+.section2  {
+  color: #fff;
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+}
+.section2 svg {
+  fill: #fff;
+}
+.section2 h2 {
+  font-size: 32px;
+  text-align: center;
+  margin: 40px 0;
+}
+.section2 h3 {
+  text-align: center;
+}
+.section2 .cta {
+  display: block;
+  margin: 30px auto;
+  max-width: 220px;
+}
+
+/*Section 3*/
+.section3 {
+  padding: 100px 0;
+}
+.section3 h3 {
+  font-size: 18px;
+  text-align: center;
+}
+.section3 svg {
+  max-width: 50px;
+  fill:#f5cf00;
+  display:block;
+  margin: 0 auto;
+}
+.section3 .cta {
+  display:block;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/*Section 4*/
+.section4 {
+  width: 100%;
+  padding: 100px 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/toolman.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.section4 h2 {
+  font-size: 40px;
+  text-align: center;
+  color:#fff;
+}
+.section4 .clear-cta {
+  display:block;
+  margin: 50px auto;
+  text-align: center;
+}
+.section4 .clear-cta button{
+  padding: 15px 50px;
+  color:#fff;
+  font-weight: bold;
+}
+.section4 .clear-cta button:hover {
+  color:#000;
+  background: #fff;
+}
+
+/*Section 5*/
+.section5 {
+  padding: 50px;
+}
+.section5 p {
+  font-style: italic;
+  color: #777;
+  font-size:16px;
+}
+.section5 h3 {
+  font-size: 16px;
+}
+.section5 .cta {
+  display:block;
+  margin: 50px auto;
+  text-align: center;
+}
+.section5 .container {
+  margin: 0 auto;
+}
+.section5 .row {
+  margin: 0 auto;
+}
+.section5 svg {
+ fill: #ccc;
+ max-width: 20px;
+}
+
+footer {
+  background: #000;
+  padding:80px 0 10px;
+  color: #fff;
+  text-align: center;
+}
+footer svg {
+max-width: 80px;
+fill: #fff;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+}
+
+
+
+/*Responsive*/
+@media screen and (max-width: 1366px) {
+
+}
+
+@media screen and (max-width: 991px) {
+  
+}
+
+@media screen and (max-width: 767px) {
+  
+}
+
+@media screen and (max-width: 480px) {
+  .section1 {
+    background: none;
+  }
 }
 
 
