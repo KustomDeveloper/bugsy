@@ -6,13 +6,14 @@
     <title>Woodward Plumbing and Heating</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 <body>
   <div class="topbar container">
     <img class="logo" src="./img/WoodwardPlumbingLogo-480w.png" />
-    <div class="mobile-menu"><i class="fa fa-menu"></i></div>
+    <div class="mobile-menu"><i class="fa fa-bars"></i></div>
+    <div class="close-btn"><i class="fa fa-times"></i></div>
     <nav>
       <ul>
         <a class="selected" href="/"><li>Home</li></a>
@@ -166,15 +167,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4"><img class="logo" src="./img/WoodwardPlumbingLogo-480w.png" /></div>
-        <div class="col-md-4"><h3>Location</h3><p>SERVING BRADFORD, CHEMUNG & TIOGA COUNTIES</p></div>
-        <div class="col-md-4"><h3>Contact Me</h3><p><i class="fa fa-facebook"></i><i class="fa fa-email"></i></p></div>
+        <div class="col-md-4"><h3>Locations</h3><p>SERVING BRADFORD, CHEMUNG & TIOGA COUNTIES</p></div>
+        <div class="col-md-4"><h3>Contact Me</h3><p><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-envelope"></i></a></p></div>
       </div>
     </div>
 
-    <div class="copyright">© 2020 All Rights Reserved | Woodward Plumbing and Heating, LLC</div>
+    <div class="copyright">© <?php echo date('Y'); ?> All Rights Reserved | Woodward Plumbing and Heating, LLC</div>
   </footer>
 
   <!--Scripts go here-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
   <script src="./js/main.js"></script>
 </body>

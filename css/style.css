@@ -17,20 +17,26 @@ section {
   position: fixed;
   width: 100%;
   top: 0;
-  padding: 5px 60px;
   z-index:9;
+  height: 120px;
 }
 .topbar .cta {
   margin: 15px 0 0;
 }
 .logo {
-  width: 138px;
-  height: 90px;
+  width: 100%;
+  max-width: 140px;
   margin: 8px 0 8px 40px;
   float: left;
+  transition: width 0.5s;
 }
-.mobile-menu {
+.mobile-menu, .close-btn {
   display:none;
+  position: absolute;
+  right: 50px;
+  top: 40px;
+  font-size:30px;
+  transition: display 0.5s;
 }
 nav {
   margin: 40px 0 0 100px;
@@ -103,6 +109,7 @@ nav ul li {
 .top-cta {
   position: absolute;
   right: 200px;
+  margin: 30px 0 0;
 }
 
 /*Section 1*/
@@ -231,7 +238,7 @@ nav ul li {
 
 footer {
   background: #000;
-  padding:80px 0 10px;
+  padding:20px 0 0px;
   color: #fff;
   text-align: center;
 }
@@ -239,10 +246,21 @@ footer svg {
 max-width: 80px;
 fill: #fff;
 }
-
+footer .fa {
+  font-size: 24px;
+  padding-right: 10px;
+  text-align: left;
+}
+footer h3, footer p {
+  text-align: left;
+}
 .copyright {
   color: #fff;
   text-align: center;
+  display:block;
+  background: #222;
+  margin:10px 0 0;
+  padding: 5px 0;
 }
 
 
@@ -253,17 +271,137 @@ fill: #fff;
 }
 
 @media screen and (max-width: 991px) {
-  
-}
-
-@media screen and (max-width: 767px) {
-  
-}
-
-@media screen and (max-width: 480px) {
-  .section1 {
-    background: none;
+  .topbar {
+    height:80px !important;
+    position: initial;
+  }
+  .logo {
+    margin: 8px 0;
+    max-width: 90px;
+  }
+  nav {
+    display: none;
+    position : absolute;
+    background: #000;
+    width: 100%;
+    padding:20px;
+    right: 0;
+    top: -40px;
+    z-index: 8;
+  }
+  nav a {
+    display: block;
+    text-align: center;
+    padding: 3px 10px;
+    color:#fff;
+  }
+  .close-btn {
+    z-index:9;
+    color: #fff;
+    top: 10px;
+  }
+  .top-cta {
+    display: none !important;
+  }
+  .mobile-menu {
+    display: block;
+    top: 20px;
+  }
+  #hero {
+    margin: 0;
+    min-height: 450px;
+  }
+  .hero-content {
+    margin: 0;
+    height: auto;
+    width: 450px;
+    padding: 30px;
+  }
+  .smallHeadline {
+    font-size: 16px;
+    margin: 0;
+  }
+  .hero-content h2 {
+      font-size: 36px;
+      margin: 20px 0;
   }
 }
-
-
+@media screen and (max-width: 768px) {
+  .hero-content {
+    width: 300px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h2, h3, p, .cta {
+    text-align: center !important;
+    display: block;
+  }
+  .section1 {
+    background: none;
+    padding: 5px 0 25px;
+  }
+  .section2 {
+    padding: 0 0 15px;
+  }
+  .section2 h3 {
+    margin-top:10px;
+  }
+  .section2 h2 {
+    font-size: 30px;
+    margin: 30px 15px;
+  }
+  .section2 p {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .section3 {
+    padding: 15px 0 0;
+  }
+  .section4 {
+    padding: 15px 0 0;
+  }
+  .section4 h2 {
+    font-size: 30px;
+  }
+  .section5 {
+    padding: 15px 0 0;
+  }
+  footer {
+    padding: 15px 0 10px;
+    text-align: center;
+  }
+  footer .logo {
+    display:none;
+  }
+  footer .col-md-4 {
+    width: 100% !important;
+    display: block;
+    margin: 0 auto;
+  }
+  .copyright {
+    font-size:14px;
+    max-width: 350px;
+    margin:0 auto;
+  }
+  .hero-content {
+    margin: 0;
+    height: auto;
+    width: 100%;
+    padding: 30px;
+  }
+  .hero-content .cta {  
+    display: block;
+    text-align: center;
+  }
+  .smallHeadline {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+  }
+  .hero-content h2 {
+    font-size: 36px;
+    margin: 20px 0;
+    text-align: center;
+  }
+}
